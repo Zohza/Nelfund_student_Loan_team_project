@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "test@example.com",
+      "password": "123456"
+    },
+    {
+      "id": "847e",
+      "email": "bolu@email.com",
+      "password": "0000"
+    },
+    {
+      "id": "6940",
+      "email": "temi2@gmai.com",
+      "password": "12345678"
+    },
+    {
+      "id": "6285",
+      "email": "mom@email.com",
+      "password": "mom101"
+    },
+    {
+      "id": "3e0c",
+      "email": "friend@email.com",
+      "password": "0000"
+    },
+    {
+      "id": "e235",
+      "email": "Michea@email.com",
+      "password": "mmmmmmmmmm"
+    }
+  ]
+}
