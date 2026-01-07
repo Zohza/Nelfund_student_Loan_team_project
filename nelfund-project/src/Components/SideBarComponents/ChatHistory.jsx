@@ -32,7 +32,7 @@ const ChatHistory = ({ activeChatId, onSelectChat, onNewChat, onDeleteChat, onLo
 
       {/* Header */}
       <div className="px-4 py-3 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between">
-        <span className="text-sm font-semibold">Chats</span>
+        <span className="text-sm font-semibold text-white">Chats</span>
         <button
           onClick={onNewChat}
           className="text-sm px-3 py-1 rounded-md bg-blue-600 text-white hover:opacity-90 transition"
