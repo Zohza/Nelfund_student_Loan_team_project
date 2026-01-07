@@ -105,14 +105,14 @@ const HeroSection = () => {
                {/* Background Image Layer */}
                <div className="absolute inset-0 bg-gradient-to-tr from-emerald-900/30 to-slate-900/30 rounded-3xl -z-20 transform rotate-3 scale-105 opacity-50" />
                
-               <div className="relative rounded-3xl overflow-hidden shadow-2xl animate-float group bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800">
+               <div className="relative rounded-3xl overflow-hidden shadow-2xl animate-float group bg-white dark:bg-white dark:bg-slate-900 border border-gray-200 dark:border-slate-800">
                   
                   {/* Image Background - Clearly Visible */}
                   <div className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style={{ backgroundImage: "url('/nelfund.jpg')" }} />
                   <div className="absolute inset-0 z-0 bg-white/10 dark:bg-slate-900/70" /> {/* Overlay adaptation */}
 
                   {/* Chat Interface Preview */}
-                  <div className="relative z-10 m-4 sm:m-8 bg-white dark:bg-slate-900 rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-slate-700">
+                  <div className="relative z-10 m-4 sm:m-8 bg-black dark:bg-slate-900 rounded-2xl shadow-xl overflow-hidden border border-gray-200 dark:border-slate-700">
                      {/* Chat Header */}
                      <div className="bg-emerald-600 px-4 py-3 flex items-center justify-between">
                         <div className="flex items-center gap-2">
