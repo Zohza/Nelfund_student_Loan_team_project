@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Send } from "lucide-react";
+import Navbar from "../NavBar"
 
 const Demo = () => {
   const [input, setInput] = useState("");
@@ -69,6 +70,7 @@ const Demo = () => {
             className="flex-1 px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-transparent text-gray-900"
           />
           <button
+          type="submit"
             onClick={handleSend}
             className="bg-emerald-600 text-white p-2 rounded-lg hover:bg-emerald-700 transition"
           >
