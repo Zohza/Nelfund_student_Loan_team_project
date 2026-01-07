@@ -29,6 +29,16 @@
       "id": "e235",
       "email": "Michea@email.com",
       "password": "mmmmmmmmmm"
+    },
+    {
+      "id": "42c2",
+      "email": "john@example.com",
+      "password": "password123"
+    },
+    {
+      "id": "5cc3",
+      "email": "test_signup@example.com",
+      "password": "password123"
     }
   ]
 }

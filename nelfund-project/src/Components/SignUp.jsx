@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import NavBar from "./NavBar";
+import { auth } from "../lib/firebase";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 
 function Signup() {
   const [name, setName] = useState("");
@@ -12,34 +14,29 @@ function Signup() {
   const handleSignup = async (e) => {
     e.preventDefault();
 
-    if (!email || !password  || !name) {
-      setMessage("Email and password are required");
+    if (!email || !password || !name) {
+      setMessage("Name, email and password are required");
       return;
     }
 
-    const resCheck = await fetch(
-      `http://localhost:4000/users?email=${email}`
-    );
-    const existingUsers = await resCheck.json();
-
-    if (existingUsers.length > 0) {
-      setMessage("User already exists");
-      return;
-    }
-
-    const res = await fetch("http://localhost:4000/users", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
-    });
-
-    if (res.ok) {
+    try {
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+      
       setMessage("Signup successful! Redirecting to login...");
       setEmail("");
       setPassword("");
+      setName("");
       setTimeout(() => navigate("/login"), 1000);
-    } else {
-      setMessage("Error signing up");
+    } catch (error) {
+      console.error("Signup error:", error);
+      if (error.code === 'auth/email-already-in-use') {
+        setMessage("User already exists");
+      } else if (error.code === 'auth/weak-password') {
+        setMessage("Password should be at least 6 characters");
+      } else {
+        setMessage("Error signing up: " + error.message);
+      }
     }
   };
 

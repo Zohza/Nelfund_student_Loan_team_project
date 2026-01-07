@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import NavBar from "./NavBar";
+import { auth } from "../lib/firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -11,23 +13,24 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const res = await fetch(
-      `http://localhost:4000/users?email=${email}`
-    );
-    const users = await res.json();
-
-    if (users.length === 0) {
-      setMessage("User not found");
+    if (!email || !password) {
+      setMessage("Email and password are required");
       return;
     }
 
-    const user = users[0];
-
-    if (user.password === password) {
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      const user = userCredential.user;
+      
       setMessage(`Login successful! Welcome ${user.email}`);
       navigate("/chatbot");
-    } else {
-      setMessage("Incorrect password");
+    } catch (error) {
+      console.error("Login error:", error);
+      if (error.code === 'auth/user-not-found' || error.code === 'auth/wrong-password' || error.code === 'auth/invalid-credential') {
+        setMessage("Invalid email or password");
+      } else {
+        setMessage("Error logging in: " + error.message);
+      }
     }
   };
 

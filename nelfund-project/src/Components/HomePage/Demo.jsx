@@ -29,8 +29,10 @@ const Demo = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background flex flex-col items-center px-4 py-6">
-
+    <div className=" min-h-screen bg-background flex flex-col items-center">
+      <div className="w-full mb-12">
+        <Navbar />
+      </div>
       {/* Header */}
       <div className="max-w-2xl w-full text-center mb-6">
         <h1 className="text-3xl font-bold text-primary-foreground">
