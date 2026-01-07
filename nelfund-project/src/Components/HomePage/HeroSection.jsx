@@ -192,17 +192,17 @@ const HeroSection = () => {
         </div>
 
         {/* Premium Trust Bar */}
-        <div className="border-t border-gray-200 dark:border-slate-800 bg-white/40 dark:bg-slate-900/40 backdrop-blur-md">
+        <div className="border-t border-gray-200 dbg-white/40 backdrop-blur-md">
            <div className="container mx-auto px-4 py-8">
               <p className="text-center text-sm font-medium text-muted-foreground mb-6 uppercase tracking-wider">Trusted by students from top institutions</p>
               <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
                  {/* Simulate Logos with Text for now */}
-                 <span className="text-2xl font-serif font-black text-slate-700 dark:text-slate-300">UNILAG</span>
-                 <span className="text-2xl font-serif font-black text-slate-700 dark:text-slate-300">OAU</span>
-                 <span className="text-2xl font-serif font-black text-slate-700 dark:text-slate-300">UNIBEN</span>
-                 <span className="text-2xl font-serif font-black text-slate-700 dark:text-slate-300">ABU ZARIA</span>
-                 <span className="text-2xl font-serif font-black text-slate-700 dark:text-slate-300">UI</span>
-                 <span className="text-2xl font-serif font-black text-slate-700 dark:text-slate-300">UNN</span>
+                 <span className="text-2xl font-serif font-yellow text-slate-700">UNILAG</span>
+                 <span className="text-2xl font-serif font-black text-slate-700">OAU</span>
+                 <span className="text-2xl font-serif font-black text-slate-700">UNIBEN</span>
+                 <span className="text-2xl font-serif font-black text-slate-700 ">ABU ZARIA</span>
+                 <span className="text-2xl font-serif font-black text-slate-700 ">UI</span>
+                 <span className="text-2xl font-serif font-black text-slate-700">UNN</span>
               </div>
            </div>
         </div>
