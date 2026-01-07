@@ -1,16 +1,17 @@
-# React + Vite
+Hero section
+<img width="1585" height="737" alt="image" src="https://github.com/user-attachments/assets/f91ebfa7-bee1-4bd2-a239-9d3499f8a64b" />
+Blog section
+<img width="1585" height="738" alt="image" src="https://github.com/user-attachments/assets/0f568889-c4c6-4852-ba2e-26a2d3499647" />
+contact form
+<img width="1580" height="733" alt="image" src="https://github.com/user-attachments/assets/2e8d69b8-7a72-49ef-8a8f-adba07eb93e2" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sign Up
+<img width="1592" height="739" alt="image" src="https://github.com/user-attachments/assets/35b5f0ef-f218-4db5-b62a-ede2ca616892" />
 
-Currently, two official plugins are available:
+Login
+<img width="1581" height="739" alt="image" src="https://github.com/user-attachments/assets/7789a03b-1089-44fa-91e1-05679ea5e8b6" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Chatbot
+<img width="1600" height="739" alt="image" src="https://github.com/user-attachments/assets/d3375bc3-34c8-4754-ba76-a220f6d61fb8" />
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
